@@ -10,10 +10,10 @@ Code Libraries used:
 
 ## Features ##
 
-  **Engine works with any image**: load the image into the puzzle engine to make it into a sliding puzzle game.
+  **Engine works with any image**: Load any browser displayable image into the puzzle engine to make it into a sliding puzzle game.
 
-  **Variable grid dimensions**: successfully divides image into a grid of any number of tile configurations (2x2, 2x3, 3x2, 5x8, 12x3, etc.)
+  **Variable grid dimensions**: Successfully divides image into a grid of any number of tile configurations (2x2, 2x3, 3x2, 5x8, 12x3, etc.)
 
-  **Tile numbering and tracking**: toggle the numbering of the tiles on and off
+  **Tile numbering and tracking**: Toggle the numbering of the tiles on and off
 
   **Dynamic element creation**: Components of the game UI are dynamically generated and inserted into the HTML DOM
