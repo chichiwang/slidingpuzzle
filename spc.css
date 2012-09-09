@@ -1,0 +1,90 @@
+/*  Author: Chi-chi Wang
+    Sliding Puzzle Core Styles
+*/
+
+#controlBox {
+  text-align: left;
+  padding-top: 10px;
+  position: relative;
+  margin-left: auto; margin-right: auto; margin-top: 15px;
+  font: 16px Helvetica Neue,Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif;
+  color: #516e7f;
+}
+
+#fullImage {
+  position: relative;
+  margin-left: auto; margin-right: auto; margin-bottom: 25px; top: 10px;
+  width: 540px; height: 405px;
+}
+
+select { background: transparent; width: 45px; text-align: center; }
+a[href="begin"] { font-size: 20px; border: 1px solid #516e7f; border-radius: 5px; }
+a[href="begin"]:hover { border: 1px solid #a5a5a5; }
+#lowerControl, #upperControl {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  display: table;
+}
+#lowerControl div, #upperControl div {
+  display: table-cell;
+  white-space: nowrap;
+}
+.left { text-align: left; }
+.right { text-align: right; }
+
+a.puzzleImg {
+  display: block;
+  width: 92px;
+  height: 92px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  float: left;
+}
+a.puzzleImg img {
+  -moz-box-shadow: 0 0 4px #7a7a7a;
+  -webkit-box-shadow: 0 0 4px #7a7a7a;
+  box-shadow: 0 0 4px #7a7a7a;
+  /* For IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#7a7a7a')";
+}
+#errorMsg { color: red; }
+#imageURL { width: 250px; margin-right: 10px; }
+.urlSub { margin-top: 10px; margin-bottom: 10px; }
+.warning { font-size: 12px; }
+
+.singleTile, .blankTile {
+  position: absolute;
+  border: 0;
+  margin: 1px;
+  
+  cursor: default;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+}
+
+.singleTile {
+  background-position: 0px 0px;
+  z-index: 500;
+}
+
+.blankTile {
+  z-index: 1;
+}
+
+.numbered {
+  position: relative;
+  float: right;
+  color: #ffffff;
+  font: 18px 'Francois One',sans-serif;
+  text-shadow: 1px 1px rgba(0,0,0,0.5),
+               -1px 1px rgba(0,0,0,0.5),
+               -1px -1px rgba(0,0,0,0.5),
+               1px -1px rgba(0,0,0,0.5);
+  width: 30px; top: 3px;
+}

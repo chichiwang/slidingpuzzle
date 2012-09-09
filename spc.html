@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="ielt9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="The portfolio webpage of Chi-chi Wang: Digital Artist, Designer, Developer">
+  <meta name="keywords" content="chichi chi-chi wang portfolio digital illustration design programmer developer visual artist saic school of the art institute of chicago">
+  <title>Chi-chi Wang &middot; Sliding Puzzle Engine Demo</title>
+  <!--[if lt IE 9]>
+  <script type="text/javascript">
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('footer');
+  </script>
+  <![endif]-->
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="cwang.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="layout/cwangStudios.ico">
+  
+  <link rel="stylesheet" href="spc.css">
+  <script type="text/javascript" src="spc.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div id="enableJS"><p>Thank you for visiting the online portfolio of Chi-chi Wang.  Please enable javascript in your web browser to view this site.</p><img src="layout/jsPic.png" alt="Señor Waxy welcomes you to Chi-chi Wang's online portfolio" /></div>
+<div id="shadowLeft"></div>
+<div id="shadowRight"></div>
+
+<div id="page-wrap">
+  <div id="menuFlourish"></div>
+  <header unselectable="on">
+    <a href="http://www.wangchiyi.com"><img id="logo" src="layout/logo.png" /></a>
+    <img id="chichi" src="layout/artistTag.png" unselectable="on" alt="Chi Yi Wang = Chi-chi Wang = Digital Artist, page header" />
+  </header>
+  
+  <nav>
+    <ul id="menu">
+      <li id="homMenu" class="menuLink"><a href="http://www.wangchiyi.com"></a></li>
+      <li id="digMenu" class="menuLink"><a href="digital.html"></a></li>
+      <li id="desMenu" class="menuLink"><a href="design.html"></a></li>
+      <li id="thrMenu"  class="menuLink"><a href="threeD.html"></a></li>
+      <li id="misMenu" class="menuLink"><a href="misc.html"></a></li>
+      <li id="spcMenu" class="menuLink"></li>
+      <li id="tipMenu" class="menuLink"><a href="textedit.html"></a></li>
+      <li id="aboMenu" class="menuLink"><a href="about.html"></a></li>
+    </ul>
+  </nav>
+
+  <section id="content">
+    <h1>Sliding Puzzle Engine Demo</h1>
+    <p>This is a demo of a sliding puzzle engine I developed as an exercise to teach myself JQuery.  It takes an image and formats it into a sliding tile puzzle.  This demo may not work in some older browsers.</p>
+    <div id="controlBox">
+  
+    <form>
+    <div id="upperControl">
+      <div class="left">Puzzle Grid:
+      <select class="down">
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select> Down x
+    
+      <select class="across">
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select> Across</div>
+    
+      <div class="right">Number Tiles: <input type="checkbox" class="toggleNumbers" checked="checked" /></div>
+    </div></form>
+    
+    <div id="fullImage"></div>
+    
+    <div id="lowerControl">
+      <div class="left"><a href="begin">&nbsp;Start Game&nbsp;</a></div>
+      <div class="right">Move Count</div>
+    </div>
+    
+    </div>
+    
+    <h2>Load An Image</h2>
+    <p>Click on a thumbnail below to load a new image into the Sliding Puzzle Engine</p>
+    <a href="images/JStreetCats.jpg" class="puzzleImg"><img src="thumbs/JStreetCats_thumb.jpg" /></a>
+    <a href="images/TubPlanting.jpg" class="puzzleImg"><img src="thumbs/TubPlanting_thumb.jpg" /></a>
+    <a href="images/Pichola.jpg" class="puzzleImg"><img src="thumbs/Pichola_thumb.jpg" /></a>
+    <a href="images/MagicGarden.jpg" class="puzzleImg"><img src="thumbs/MagicGarden_thumb.jpg" /></a>
+    <a href="images/HotDougs.jpg" class="puzzleImg"><img src="thumbs/HotDougs_thumb.jpg" /></a>
+    <a href="images/PeaceFest.jpg" class="puzzleImg"><img src="thumbs/PeaceFest_thumb.jpg" /></a>
+    
+    <h2>Link An Image</h2>
+    <p>Enter the URL of a jpg, png or gif to load it into the Sliding Puzzle Engine</p>
+    <p class="warning">Warning: This function doesn't work properly in versions of Internet Explorer below 9.  Please use a real web browser to try it out.</p>
+    <form>
+      <input type="text" id="imageURL" /><input class="urlSub" type="submit" value="Submit" /><p id="errorMsg"></p>
+    </form>
+    
+    </section>
+
+  <footer>
+    <span id="email"><img src="layout/email.png" /><span>Email me: <a href="mailto:chichi@wangchiyi.com">chichi@wangchiyi.com</a></span></span>
+  </footer>
+</div>
+  
+</body>
+</html>

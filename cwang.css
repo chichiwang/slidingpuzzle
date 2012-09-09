@@ -1,0 +1,158 @@
+/*  Author: Chi-chi Wang
+    Portfolio Slideshow Website Styles
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+header, nav, section, footer { display: block; }
+html, body { height: 100%; }
+a img { border: none; }
+a[href*='gmail.com'], a:visited, a:link {
+  color: #516e7f;
+  text-decoration: none;
+}
+a:hover { color: #a5a5a5; }
+#menuFlourish, nav, header, .numbered,
+#shadowRight, #shadowLeft, img {
+ -webkit-touch-callout: none;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ -o-user-select: none;
+ user-select: none;
+}
+
+body {
+  padding: 0px;
+  font: 16px 'Ubuntu',Helvetica Neue,Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif;
+  color: #7a7a7a;
+  text-shadow: 0px 1px #fff;
+  background-image: url(layout/BackCanvas.jpg);
+  z-index: 0;
+}
+h1 {
+  font: 24px 'Ubuntu',Helvetica Neue,Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif;
+  color: #516e7f;
+  font-weight: bold;
+  text-shadow: 0px 1px #fff;
+  margin-bottom: 15px;
+}
+h2 {
+  font: 18px 'Ubuntu',Helvetica Neue,Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 1px #fff;
+  clear: both;
+}
+
+#enableJS {
+  position: fixed;
+  z-index: 1000;
+  text-align: center;
+  padding-top: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(layout/WorkSurface.jpg);
+}
+
+img#logo {
+  position: absolute;
+  left: 5px;
+}
+img#chichi {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+#menuFlourish{
+  position: absolute;
+  background-image: url(layout/spotOcolor.png);
+  width: 702px;
+  height: 662px;
+  z-index: 22;
+}
+#email {
+  display: inline-block;
+  min-height:40px;
+  vertical-align: top;
+}
+#email img { position: relative; }
+#email a { display: inline; }
+
+ul#menu { margin-left: 10px; }
+ul#menu li {
+  display: block;
+  margin-top: 5px;
+  list-style: none;
+  height: 30px;
+  width: 200px;
+}
+ul#menu li a, #logo a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+li#homMenu{ background: url(layout/Home_menu.png); }
+li#digMenu{ background: url(layout/Digital_menu.png); }
+li#desMenu{ background: url(layout/Design_menu.png); }
+li#thrMenu{ background: url(layout/Three_menu.png); }
+li#misMenu{ background: url(layout/Misc_menu.png); }
+li#spcMenu{ background: url(layout/SPC_menu.png); }
+li#tipMenu{ background: url(layout/Input_menu.png); }
+li#aboMenu{ background: url(layout/About_menu.png); }
+
+
+#shadowRight, #shadowLeft {
+  position: absolute;
+  width: 16px;
+  height: 50px;
+  z-index: 1;
+}
+#shadowRight { background-image: url(layout/shadowR.png); }
+#shadowLeft { background-image: url(layout/shadowL.png); }
+
+#page-wrap {
+  position: relative;
+  overflow: hidden;
+  margin: 0px auto;
+  min-width: 780px;
+  max-width: 1260px;
+  width: 100%;
+  min-height: 100%;
+  background-image:url(layout/WorkSurface.jpg);
+  z-index: 20;
+}
+header {
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+  height: 80px;
+  z-index: 25;
+}
+nav {
+  position: relative;
+  float: left;
+  padding: 5px;
+  width: 210px;
+  z-index: 25;
+}
+#content {
+  position: relative;
+  overflow: hidden;
+  padding: 15px;
+  padding-right: 35px;
+  float: right;
+  z-index: 25;
+}
+footer {
+  height: 40px;
+  width: 100%;
+  clear: both;
+  margin-bottom: 15px;
+  z-index: 25;
+  text-align: center;
+}
