@@ -16,4 +16,6 @@ Code Libraries used:
 
   **Tile numbering and tracking**: Toggle the numbering of the tiles on and off
 
+  **Move count tracking**: Tracks the number of moves the player makes during gameplay
+
   **Dynamic element creation**: Components of the game UI are dynamically generated and inserted into the HTML DOM
